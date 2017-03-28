@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<script src="js/pgb.js"></script>
+		<script src="cordova.js"></script>
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	</head>
+	<body onload="init()">
+			
+		<div id="pageone" data-role="main" class="ui-content">
+			<p>Click on the image to enlarge it.</p>
+			<a href="#tatry" data-rel="popup" data-position-to="window"><img src="img/tatry.jpg" alt="Tatry view" style="width:200px;"></a>
+			<a href="#masuria" data-rel="popup" data-position-to="window"><img src="img/masuria.jpg" alt="Masuria view" style="width:200px;"></a>
+			<a href="#pomerania" data-rel="popup" data-position-to="window"><img src="img/pomerania.jpg" alt="Pomerania view" style="width:200px;"></a>
+		
+			<div data-role="popup" id="tatry">
+				<p>Tatry!</p> 
+				<a href="#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+				<img src="img/tatry.jpg" style="width:800px;height:400px;" alt="Tatry View">
+			</div>
+		</div>
+		
+		<div data-role="popup" id="masuria">
+				<p>Masuria!</p> 
+				<a href="#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+				<img src="img/masuria.jpg" style="width:800px;height:400px;" alt="Tatry View">
+			</div>
+		</div>
+
+		<div data-role="popup" id="pomerania">
+				<p>Pomerania!</p> 
+				<a href="#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+				<img src="img/pomerania.jpg" style="width:800px;height:400px;" alt="Tatry View">
+			</div>
+		</div>
+			
+		
+	</body>
+</html>
